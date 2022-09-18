@@ -1,2 +1,2 @@
 # Learn-Crypto
-Contains all I have learn in playing CTF on Crypto
+Contains all I have learnt in playing CTF on Crypto
