@@ -6,7 +6,19 @@ Index table :
 + Data types conversion 
 + JSON Format and Communicate through Netcat 
 + Data Format 
++ XOR Operation
 
-## Data types :
-### Integer ###
+### Integer (Base 10) ###
+### Hex (Base 16) ###
+### Binary (Base 2) ###
+### Bytes (Base 256) ###
+### ASCII (Base 128) ###
+### Conversion ###
+### JSON Format ###
+### Netcat Communication ###
+### XOR Operation ###
+### XOR Properties ###
+### SSH Format ###
+### PEM Format ###
+### PUB Format ###
 
