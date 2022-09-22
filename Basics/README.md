@@ -18,7 +18,7 @@ Index table :
 ### Netcat Communication ###
 ### XOR Operation ###
 ### XOR Properties ###
-### SSH Format ###
+### DER Format ###
 ### PEM Format ###
 ### PUB Format ###
 
