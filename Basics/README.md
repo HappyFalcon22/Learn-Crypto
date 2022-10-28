@@ -9,6 +9,14 @@ Index table :
 + XOR Operation
 
 ### Integer (Base 10) ###
+
+Integer, probably not gonna cover much here cause its quite obvious.
+In Python, we declare as follow : 
+```Python
+some_int = 394463287463287623846238746723846723
+print(type(some_int))
+```
+
 ### Hex (Base 16) ###
 ### Binary (Base 2) ###
 ### Bytes (Base 256) ###
