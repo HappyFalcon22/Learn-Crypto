@@ -115,7 +115,7 @@ The ```value``` can be a string, an array, a number, etc... Depend on how you us
 
 ### Netcat Communication ###
 
-In CTF Crypto challenge, we will frequently deal with "communication" challenge, where we will interact to gather information to do attacks to solve the challenge. You can read the (Netcat reference)[https://en.wikipedia.org/wiki/Netcat].
+In CTF Crypto challenge, we will frequently deal with "communication" challenge, where we will interact to gather information to do attacks to solve the challenge. You can read the [Netcat reference](https://en.wikipedia.org/wiki/Netcat).
 In this section, I will cover the Python code for doing Netcat. Basically most Netcat message that we interract are in JSON Format:
 ```Python
 #!/usr/bin/env python3
@@ -125,9 +125,6 @@ import json
 
 HOST = "socket.cryptohack.org"
 PORT = 13370
-
-
-
 
 def readline():
     return tn.read_until(b"\n")
@@ -148,7 +145,7 @@ There are of course many more methos to do netcat communication, but this method
 
 ### XOR Operation ###
 
-The first simplest operation we will learn in Crypto is XOR (or Exclusive-OR) $\xor$
+The first simplest operation we will learn in Crypto is XOR (or Exclusive-OR) $\orplus$
 
 ### XOR Properties ###
 ### DER Format ###
