@@ -1,2 +1,2 @@
-# Learn-Crypto
-Contains all I have learnt in playing CTF on Crypto
+# Learn-Cryptography
+Contains all I have learnt of cryptography from the course Applied Cryptography and plaing CTFs
