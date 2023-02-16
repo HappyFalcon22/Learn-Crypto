@@ -7,7 +7,7 @@ Alright, remember the 5-tuple of a cryptosystem : $(\mathscr{P, C, K, E, D})$ , 
 In Shift Cipher :
 
 + $\mathscr{P = C = K} = \mathbb{Z}_{26}$
-+ $K \in \mathscr{K}, K \in \mathbb{Z}_{26}$
++ $K \in \mathscr{K}$
 + The encryption rule : $e_K(p) = p + K \pmod{26}$
 + The decryption rule : $d_K(c) = c + K \pmod{26}$
 + Proved : $d_K(e_K(p)) \equiv p + K - K \equiv p \pmod{26}$
