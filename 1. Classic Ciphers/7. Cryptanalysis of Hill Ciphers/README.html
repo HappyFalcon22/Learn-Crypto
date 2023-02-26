@@ -1,0 +1,2040 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap' rel='stylesheet' type='text/css' /><link href='https://rsms.me/inter/inter.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+
+/* CSS Document */
+
+:root{
+  --code-current-line: #44475a;
+  --code-foreground: #f8f8f2;
+  --code-comment: #6272a4;
+  --code-cyan: #8be9fd;
+  --code-green: #50fa7b;
+  --code-orange: #ffb86c;
+  --code-gold: #feb32b;
+  --code-purple: #ac80ff;
+  --code-red: #ff5555;
+  --code-pink: #ff695a;
+}
+
+/** General settings */
+
+.cm-s-inner {
+    border-radius: .25rem;
+    padding: .5rem .2rem;
+}
+
+.cm-s-inner.CodeMirror,
+.cm-s-inner .CodeMirror-gutters {
+    background-color: var(--bg-dark) !important;
+    border: 1px solid var(--bg-dark);
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line>span::selection,
+.cm-s-inner .CodeMirror-line>span::-moz-selection,
+.cm-s-inner .CodeMirror-line>span>span::selection,
+.cm-s-inner .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(255, 255, 255, .05);
+}
+
+
+.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
+    background: rgba(255, 255, 255, .05);
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+    color:var(--text-color) !important;
+    text-decoration: underline;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext,
+body::selection,
+body::-moz-selection {
+    background: var(--select-text-bg-color) !important;
+    background-color: var(--select-text-bg-color) !important;
+    color: var(--select-text-font-color) !important;
+    text-shadow: none;
+}
+
+/* Syntax colours */
+
+.cm-s-inner .cm-variable {
+    color: var(--code-green)
+}
+
+.cm-s-inner .cm-operator {
+    color: var(--code-gold)
+}
+
+.cm-s-inner .cm-property {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-keyword {
+    color: var(--code-gold);
+}
+
+.cm-s-inner .cm-tag {
+    color: var(--code-gold);
+}
+
+.cm-s-inner .cm-attribute {
+    color: var(--code-green);
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--code-foreground);
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string,
+.cm-s-inner .cm-string-2 {
+    color: var(--code-pink);
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: var(--code-comment);
+}
+
+.cm-s-inner .cm-header,
+.cm-s-inner.cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-def {
+    color: var(--code-cyan);
+}
+
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #57ac57;
+}
+
+.cm-s-inner .cm-hr {
+    color: #d8d5d5;
+}
+
+.cm-s-inner .cm-link {
+    color: #d3d3ef;
+}
+
+.cm-s-inner .cm-negative {
+    color: #d95050;
+}
+
+.cm-s-inner .cm-positive {
+    color: #50e650;
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: var(--code-green);
+}
+
+.cm-s-inner .cm-builtin {
+    color: var(--code-green);
+}
+
+.cm-s-inner .cm-bracket {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: var(--code-cyan);
+}
+
+.cm-s-inner .cm-number {
+    color: var(--code-purple);
+}
+
+.cm-s-inner .cm-variable {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: var(--code-foreground);
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: var(--code-cyan);
+    font-style: italic;
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: var(--code-current-line);
+    color: #fff !important;
+    text-shadow: none;
+}/*
+Theme Name: CryptoHack
+Theme URI: https://github.com/cryptohack/typora-theme
+Authors: CryptoHack
+Author URI: https://cryptohack.org
+Description: A dark Typora theme that matches the CryptoHack theme
+Version: 0.0.1
+Tags: dark, cryptohack, typora
+*/
+
+@import "";
+
+@include-when-export url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@include-when-export url('https://rsms.me/inter/inter.css');
+
+/* Use a special font for code blocks just like GitHub */
+/*@font-face {
+    font-family: 'SFMono-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Regular'), url('file:///C://Users//Admin//AppData//Roaming//Typora/themes/cryptohack/SFMonoSemibold.woff') format('woff');
+}*/
+
+:root {
+    --text-white: #fffaf7;
+    --text-color: #F9EAE1;
+    --bg-color: #0c1221;
+    --bg-dark: #070b14;
+    --side-bar-bg-color: #0c1221;
+    --control-text-color: #a9aaab;
+    --primary-color: #feb32b;
+    --secondary-color: #e85154;
+    --primary-btn-border-color: #feb32b;
+    --active-file-text-color: inherit;
+    --active-file-border-color: #feb32b;
+    --active-file-bg-color: #0c1221;
+    --primary-btn-text-color: #feb32b;
+    --window-border: 0 solid #0c1221;
+    --item-hover-bg-color: #070b14;
+    --item-hover-text-color: #feb32b;
+    --meta-content-color: #feb32b;
+    --search-select-text-color: #feb32b;
+    --control-text-color: #fff8f4;
+    --control-text-hover-color: #fff8f4;
+    --heading-char-color: #feb32b;
+    --active-toggle-btn-color: #192133;
+    --blur-text-color: rgba(200, 200, 200, 0.33);
+    --rawblock-edit-panel-bd: #070b14 !important;
+    --select-text-bg-color: rgba(53, 82, 116, 0.97) !important;
+    --select-text-font-color: #fff !important;
+
+    /* Mermaid diagrams*/
+    --mermaid-node-color: #b87f62 !important;
+    --mermaid-node-border: #bd7958;
+    --mermaid-contrast-color: #afe61d;
+    --mermaid-theme: dark;
+    --monospace: "IBM Plex Mono";
+}
+
+.pane-group {
+    background-color: var(--bg-color);
+}
+
+.dropdown-menu {
+    background-color:var(--bg-color) !important;
+    border: 1px solid var(--bg-dark) !important;
+    color: #8b949e !important;
+}
+
+.dropdown-menu>li>a {
+    border-left: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
+    color:var(--text-color) !important;
+}
+
+.dropdown-menu>li>a:hover {
+    background-color: var(--bg-dark);
+    border-left: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
+    color:var(--text-color) !important;
+}
+
+body {
+    height: 100%;
+    line-height: 1.6;
+    font-family: "Inter var", sans-serif;
+}
+
+#write {
+    background-color:var(--bg-color) !important;
+    font-family: "Inter var", sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+    #write {
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #write {
+        max-width: 1200px;
+    }
+}
+
+#write>ul:first-child,
+#write>ol:first-child {
+    margin-top: 30px;
+}
+
+content {
+    background-color:var(--bg-color) !important;
+}
+
+/*.md-end-block.md-heading.md-focus {
+  color: #afe61d;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:var(--text-color);
+    font-family: "IBM Plex Mono", sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Inter var", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    text-transform: uppercase;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    padding-bottom: .3em;
+    border-bottom: 1px solid #21262d;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    padding-bottom: .3em;
+    border-bottom: 1px solid #21262d;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+h1.md-focus:before,
+h2.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    content: '';
+    border: 0;
+}
+
+p {
+    color:var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 1.25rem;
+}
+
+kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px IBM Plex Mono, Consolas, Liberation Mono, Menlo, monospace;
+    line-height: 10px;
+    color: #b1bac4;
+    vertical-align: middle;
+    background-color:var(--bg-color);
+    border-bottom-color: #6e7681;
+    border: 1px solid #6e7681;
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 #6e7681;
+}
+
+figure {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.22),0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+
+a,
+.md-def-url {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Summary */
+
+.md-toc {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.md-toc-content {
+    font-size: 1.05rem;
+    /*background-color: var(--bg-dark) !important;*/
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.md-toc-content a,
+.md-toc-content a:hover,
+.md-toc-content a:visited{
+    color: var(--text-color);
+}
+
+/*.md-toc-inner:hover {
+  text-decoration: none;
+}*/
+
+#write div.md-toc-tooltip {
+    background-color: var(--bg-dark) !important;
+    border: 1px solid var(--bg-dark);
+    padding-left: 5px;
+    font-size: 1.4rem;
+    color:var(--text-color);
+}
+
+.md-toc:focus .md-toc-content {
+    border: 1px solid var(--bg-dark);
+}
+
+.md-delete-toc {
+    color:var(--text-color);
+}
+
+table {
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+table th,
+table td {
+    padding: 8px;
+    line-height: 1.25rem;
+    vertical-align: middle;
+    border: 0;
+}
+
+table th {
+    font-weight: 700;
+    padding: 6px 13px;
+}
+
+/*
+table thead th {
+  vertical-align: bottom;
+}*/
+
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+table tbody+tbody {
+    border: 0;
+}
+
+table tr th {
+    border: 0;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+table tr td {
+    background: #192534;
+    border: 0;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+    /*-webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25),0 8px 16px -8px rgba(0,0,0,0.3)*/
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375)!important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375)!important;
+}
+
+table tr {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+thead {
+    background-color:var(--bg-color);
+    color:var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
+    font-family: 'IBM Plex Mono';
+    text-transform: uppercase;
+}
+
+table tr th {
+    border: 0;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+table tr td {
+    background: #192534;
+    border: 0;
+    margin: 0;
+    padding: 10px 16px;
+    line-height: 1.6em;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+table tr:nth-child(2n),
+table tr:nth-child(1n) td {
+    background-color: rgba(255,255,255,.04);
+}
+
+table tr:nth-child(2n),
+table tr:nth-child(2n) td {
+    background-color:var(--bg-color);
+}
+
+.md-fences,
+tt {
+    border-radius: 3px;
+    color: var(--bg-dark);
+    font-size: .9em;
+    padding: 0;
+}
+
+code {
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: #ffffff10;
+    color: var(--primary-color);
+    border-radius: 6px;
+    font-family: "IBM Plex Mono";
+    line-height: 2;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 6px;
+    padding-top: 8px;
+    color:var(--text-color);
+}
+
+
+#write pre.md-meta-block {
+    background-color: var(--bg-dark);
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 1.45;
+    margin-top: 0 !important;
+    padding: 1rem;
+    font-size: 12px!important;
+}
+
+.mathjax-block>.code-tooltip {
+    bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+.md-image>.md-meta {
+    border-radius: 3px;
+    color: inherit;
+    font-size: .9em;
+    padding: 2px 0 0 4px;
+}
+
+.md-tag {
+    color: #70bfd9;
+    opacity: 1;
+}
+
+/*
+.CodeMirror-lines {
+  padding: 4px 0;
+}
+*/
+
+.CodeMirror-line {
+    padding-left: 15px;
+}
+
+.code-tooltip {
+    background: var(--bg-dark);
+    border: 1px solid var(--bg-dark);
+    box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
+    border-radius: 6px;
+    /*margin-right: 13px!important;*/
+}
+
+/* Yellow border when focusing Code block language input */
+.code-tooltip .ty-input {
+    border: 0;
+}
+
+/* Languages suggestions Menu */
+.auto-suggest-container {
+    background-color: var(--bg-dark);
+    border: 1px solid var(--bg-dark);
+    color:var(--text-color);
+    border-radius: 6px;
+}
+
+.dropdown-menu {
+    color: #70c0d8;
+    margin-right: 5px;
+}
+
+.md-fences {
+    padding: .3em;
+    font-size: .9em;
+    margin-left: .2em;
+    margin-right: .2em;
+}
+
+.md-fences {
+    margin: 0 0 20px;
+    padding: 0;
+    padding-top: .4em;
+}
+
+blockquote .md-end-block.md-heading {
+    color: inherit;
+}
+
+blockquote .md-end-block.md-heading:before {
+    content: '' !important;
+}
+
+blockquote {
+    margin: 0 0 1.11111rem;
+    padding: 0.2rem 1.11111rem 0.2rem  1.05556rem;
+    border-left: .25em solid var(--primary-color);
+}
+
+blockquote,
+blockquote p {
+    color: #c2bcb9;
+}
+
+.MathJax_Display {
+    font-size: 1em !important;
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+.md-math-block {
+    font-size: 1.3rem;
+}
+
+.md-rawblock-tooltip .md-rawblock-control {
+    background-color: var(--bg-dark);
+}
+
+/* Edit Math Blocks */
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    font-size: 14px!important;
+    background-color: var(--bg-dark);
+}
+
+.md-rawblock-control .CodeMirror.cm-s-inner {
+    border: 0px;
+}
+
+/* Inline Math Editing */
+.md-inline-math script {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.md-math-tex inline-math-svg {
+    font-size: 1rem;
+}
+
+.md-rawblock-panel .code-tooltip {
+    border: 0px;
+}
+
+.md-rawblock-input {
+    font-size: 1rem;
+}
+
+.md-rawblock{
+    font-size: 1.1em;
+}
+
+/* mathjax edit panel*/
+.md-rawblock-before {
+    border-top-left-radius: 6px;
+}
+
+.md-rawblock-after {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Inline Math */
+.MathJax_SVG {
+    font-size: 1.4rem;
+    color: var(--text-white);
+}
+
+.MathJax_SVG:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.md-rawblock>.md-rawblock-container {
+    transition: 0.5s;
+}
+
+.md-rawblock>.md-rawblock-tooltip {
+    transition: 0.5s;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.md-rawblock:hover>.md-rawblock-tooltip {
+    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+    animation: none;
+}
+
+p.mathjax-block,
+.mathjax-block {
+    padding-bottom: 0;
+}
+
+.mathjax-block>.code-tooltip {
+    bottom: 5px;
+    box-shadow: none;
+}
+
+.md-image>.md-meta {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.md-image>img {
+    margin-top: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.md-image>.md-meta:first-of-type:before {
+    padding-left: 4px;
+}
+
+#typora-source {
+    color:var(--text-color);
+}
+
+.typora-sourceview-on #toggle-sourceview-btn {
+    color:var(--text-color);
+    background-color: #484f58;
+}
+
+.md-image-pick-file-btn,
+.md-image-input-src-btn {
+    background-color: var(--bg-dark);
+}
+
+
+/*.md-image-btn,
+.md-image-pick-file-btn,
+.md-image-input-src-btn {
+    background-color: var(--primary-color) !important;
+    color: var(--bg-dark) !important;
+}*/
+
+.md-image-btn.selected,
+.md-image-btn:hover,
+.md-image-pick-file-btn:hover,
+.md-image-input-src-btn:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--bg-dark) !important;
+}
+
+.searchpanel-search-option-btn {
+    background-color: var(--bg-dark) !important;
+    border: 1px solid #30363d;
+}
+
+.searchpanel-search-option-btn.active {
+    color: #ddd;
+    border: 1px solid #8b949e;
+}
+
+.searchpanel-search-option-btn:hover {
+    border: 1px solid #8b949e;
+}
+
+#md-searchpanel {
+    border-bottom: 0 solid #324560;
+    font-family: "Inter var", sans-serif;
+}
+
+#md-searchpanel input {
+    background-color: #21262d !important;
+    border: 1px solid #30363d;
+}
+
+#md-searchpanel .btn {
+    font-size: 11px;
+}
+
+#md-searchpanel .btn:hover {
+    color: #8b949e;
+}
+
+#md-notification:before {
+    top: 14px;
+}
+
+#md-notification {
+    background:var(--bg-color);
+    font-size: 14px;
+    border-bottom: 0;
+}
+
+#md-notification .ty-enter-mode-warning-header {
+    color: var(--primary-color);
+}
+
+#md-notification p,
+#md-notification .btn,
+#md-notification label {
+    font-size: 14px !important;
+}
+
+.megamenu-menu-panel .btn {
+    border: 1px solid #ccc;
+}
+
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, .12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: "Inter var", sans-serif;
+}
+
+.megamenu-opened header {
+    background-image: none;
+}
+
+.file-node-content .fa-caret-right,
+.file-node-content .fa-caret-down {
+    color: var(--primary-color);
+}
+
+.file-node-title {
+    color:var(--text-color);
+}
+
+.active-tab-files {
+    background-color: var(--bg-dark) !important;
+}
+
+#typora-sidebar #ty-sidebar-footer {
+    background-color: var(--bg-dark) !important;
+    border-top: 0 solid #090b10;
+}
+
+.sidebar-tabs {
+    border-bottom: 0;
+}
+
+.megamenu-menu-header {
+    border-bottom: 1px solid #090b10;
+}
+
+.megamenu-menu-list li:not(.saved) a:not(.active):hover,
+.megamenu-menu-list li a.active {
+    background: var(--bg-dark) !important;
+}
+
+/*.file-node-content:hover .file-node-icon:hover, .file-node-content:hover {
+  visibility: visible;
+  background:var(--bg-color) !important;
+}*/
+
+.file-node-open-state {
+    background-color: transparent !important;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: var(--bg-dark);
+    border-right: 0 solid #090c12;
+    font-weight: 400;
+    font-family: Inter var, sans-serif;
+}
+
+titlebar {
+    background-color:var(--bg-color);
+}
+
+/* Sidebar header on Win/Linux (Files/Plan) */
+.info-panel-tab-title {
+    /*  color: #afe61d;
+*/
+}
+
+/* Plan should get the same sidebar background color on Win/Linux */
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
+    background-color: var(--bg-dark)
+}
+
+/* Bottom border on Win/Linux Sidebar */
+.info-panel-tab-border {
+    background-color: var(--primary-color) !important;
+}
+
+.sidebar-footer-item:hover {
+    background-color: inherit;
+}
+
+.sidebar-tab.active {
+    color:var(--primary-color);
+    font-weight: 700;
+}
+
+.file-node-icon,
+.file-node-open-state {
+    color: #6E7681;
+}
+
+.fa-file-text-o:before {
+    color:var(--text-color) !important;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color:var(--bg-color);
+    color: #efb752;
+}
+
+hr {
+    background-color: #2e74c6;
+    border: 0 none;
+    box-sizing: content-box;
+    height: .25em;
+    margin: 16px 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+input {
+    color: #82bed6;
+}
+
+#searchpanel-word-option-btn,
+#find-and-replace-icon-word,
+#find-and-replace-icon-case,
+.searchpanel-search-option-btn,
+.icon,
+.glyphicon .popover,
+.popover-title {
+    color: #82bed6 !important;
+    fill: #82bed6 !important;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.show-word-count #footer-word-count {
+    background: #000;
+}
+
+#recent-file-panel-action-btn {
+    background-color: #82bed6;
+}
+
+.dropdown-menu .divider {
+    border-color: #303d50;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    background:var(--bg-color);
+    color:var(--text-color);
+}
+
+#write ol,
+#write ul {
+    padding-left: 2rem;
+    /*  margin: .5rem 0;*/
+}
+
+#write ol>li,
+#write ul>li {
+    /*  color: #f0b752;
+*/
+    font-weight: 700;
+}
+
+#write ul>li ul>li {
+    list-style-type: circle;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#write ul>li ul>li ul>li {
+    list-style-type: square;
+    font-size: 1em;
+}
+
+#write ol>li>*,
+#write ul>li>* {
+    /*  color: #fff;
+*/
+    font-weight: 400;
+}
+
+#write ol>li>*:not(ol):not(ul),
+#write ul>li>*:not(ol):not(ul) {
+    padding-left: .25rem;
+}
+
+#write ul {
+    list-style-type: disc;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+sup.md-footnote {
+    background-color: rgba(56, 139, 253, 0.1);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 75%;
+}
+
+sup.md-footnote:hover {
+    background-color: rgba(56, 139, 253, 0.15);
+}
+
+sup.md-footnote .md-meta {
+    color: var(--secondary-color);
+}
+
+.md-def-footnote .md-def-name:before,
+.md-def-footnote .md-def-name:after {
+    content: '';
+}
+
+.md-def-footnote .md-def-name {
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgba(56, 139, 253, 0.1);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-footnote .md-def-content {
+    font-size: 15px;
+}
+
+a.reversefootnote {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+mark {
+    background-color: #2ea44f;
+    border-radius: 6px;
+    color: white;
+    line-height: 2;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.cm-s-typora-default {
+    font-family: "Inter var", sans-serif;
+    font-size: 17px;
+    color:var(--text-color);
+}
+
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property {
+    color:var(--text-color);
+}
+
+/*.cm-s-typora-default .cm-header1 {
+  font-size: 3.2rem;
+  margin: .6rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header2 {
+  font-size: 1.8rem;
+  margin: .7rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header3 {
+  font-size: 1.4rem;
+  margin: .5rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header4 {
+  font-size: 1.2rem;
+  margin: .2rem 0;
+  width: auto;
+}
+
+.cm-s-typora-default .cm-header5, .cm-s-typora-default .cm-header6 {
+  font-size: 1rem;
+  margin: 0;
+  width: auto;
+}*/
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+    border-left: 3px solid #b8bfc6;
+}
+
+.cm-s-typora-default .cm-comment {
+    color: #8b949e;
+}
+
+.cm-s-typora-default .cm-string {
+    color: #a5d6ff;
+}
+
+.cm-s-typora-default .cm-atom,
+.cm-s-typora-default .cm-number {
+    color: #8b949e;
+    font-style: italic;
+}
+
+.cm-s-typora-default .cm-link,
+.cm-s-typora-default .cm-tag {
+    color: rgb(165, 214, 255);
+}
+
+.cm-s-typora-default .cm-string {
+    color: #f0b752;
+}
+
+/*.cm-s-typora-default .cm-comment {
+  background-color: #6952b6;
+  border-radius: 4px;
+  color: #fff!important;
+  line-height: 1;
+  padding: 5px 7px 2px 7px;
+}*/
+
+.cm-s-typora-default pre.cm-s-inner {
+    background-color: var(--bg-dark) !important;
+    border: 1px solid var(--bg-dark);
+    color:var(--text-color);
+    font-size: 0.9em;
+}
+
+.cm-s-typora-default .cm-atom {
+    color: #8b949e;
+}
+
+.CodeMirror-activeline .cm-atom {
+    color:var(--text-color) !important;
+}
+
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: #484f58;
+}
+
+.cm-s-typora-default .cm-comment,
+.cm-s-typora-default .cm-code {
+    color: #8aa1e1;
+    font-size: 0.9em !important;
+}
+
+/* mega menu */
+.megamenu-content,
+.megamenu-opened header {
+    background: var(--bg-color1);
+}
+
+.megamenu-content {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.megamenu-menu-list {
+    background-color: var(--bg-dark) !important;
+}
+
+.megamenu-opened .megamenu-content {
+    visibility: visible;
+    opacity: 1;
+    animation: none;
+    background-color: inherit;
+}
+
+/* mega menu sidebar*/
+.megamenu-menu {
+    background-color: var(--bg-dark);
+}
+
+/* return button in mega menu */
+#megamenu-menu-sidebar .menu-style-btn {
+    border: 0px;
+}
+
+/* remove divider in mega menu */
+.megamenu-menu-header {}
+
+/* return button color in mega menu */
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header #megamenu-menu-header-title:before {
+    color:var(--text-color);
+}
+
+.megamenu-menu-list li a:hover,
+.megamenu-menu-list li a.active {
+    background-color:var(--bg-color);
+}
+
+/* return button hover in mega menu */
+.megamenu-menu-header:hover {}
+
+/* return button hover in mega menu */
+.megamenu-menu-header:hover #megamenu-menu-header-title {}
+
+/* long button in mega menu */
+.long-btn {
+    border: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: var(--bg-dark);
+}
+
+.long-btn:hover {
+    background-color: var(--bg-dark);
+    border-color: 1px solid #8b949e;
+    color:var(--text-color) !important;
+}
+
+
+#recent-file-panel-action-btn {
+    background-color: var(--bg-dark);
+    border: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* Mermaid Diagrams */
+
+.titleText,
+.pieTitleText {
+    fill: var(--mermaid-contrast-color);
+    font-size: 2rem;
+    font-family: Inter var, sans-serif;
+    font-weight: 400;
+}
+
+
+/* Node Overview */
+
+/* Node text */
+.grid .tick text,
+.taskText,
+text.actor,
+.node .label,
+.taskTextOutsideRight,
+.taskTextOutsideLeft,
+.labelText,
+.loopText,
+g.classGroup text {
+    color: var(--text-color);
+    fill: var(--text-color);
+    stroke: black;
+    stroke-width: .05px;
+
+    .title {
+        font-weight: 600;
+    }
+}
+
+/* Node color */
+.actor,
+.task,
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon,
+g.classGroup rect,
+.labelBox {
+    fill: var(--mermaid-node-color);
+    stroke: var(--mermaid-node-border);
+    color: var(--text-color);
+}
+
+/* Node Labels (Notes & On path) */
+.edgeLabel foreignObject {
+    color: black;
+    background-color: var(--primary-color);
+    stroke: var(--primary-btn-border-color);
+    stroke-width: 1px;
+    height: 20px;
+    text-align: center;
+    /*  padding-top: 2px;*/
+}
+
+.note {
+    fill: var(--primary-color);
+    stroke: var(--primary-btn-border-color);
+}
+
+.noteText {
+    color: black;
+}
+
+.noteText>tspan {
+    fill: #333 !important;
+    color: #333 !important;
+}
+
+.taskText {
+    fill: white !important;
+}
+
+/* Class diagram specific */
+g.classGroup line {
+    stroke: var(--text-color);
+}
+
+.classLabel .box {
+    stroke: none;
+    stroke-width: 0;
+    fill: var(--primary-color);
+    opacity: 1;
+}
+
+svg[id^="mermaidChart"] .composition,
+svg[id^="mermaidChart"] .aggregation,
+svg[id^="mermaidChart"] .dependency,
+svg[id^="mermaidChart"] .relation {
+    stroke: var(--text-color);
+}
+
+.classLabel .label {
+    fill: black;
+}
+
+#extensionStart,
+#extensionEnd,
+#compositionStart,
+#compositionEnd,
+#aggregationStart,
+#aggregationEnd,
+#dependencyStart,
+#dependencyEnd {
+    fill: var(--text-color);
+    stroke: var(--text-color);
+}
+
+/* Gantt Specific */
+svg[id^="mermaidChart"] .today {
+    stroke: var(--mermaid-contrast-color);
+}
+
+/* Pie Chart Specific */
+
+svg[id^="mermaidChart"] g path {
+    stroke: var(--text-color);
+}
+
+text.slice {
+    fill: var(--text-color);
+}
+
+.legend text {
+    fill: var(--text-color);
+}
+
+.doneCritText0,
+.doneCritText1,
+.doneCritText2,
+.doneCritText3 {
+    fill: var(--text-color) !important;
+    stroke: var(--text-color) !important;
+}
+
+/* End mermaid */
+
+/* tip when hover on a button */
+#ty-tooltip {
+    background-color: black;
+    color: white;
+}
+
+/* header in setting */
+.window-header {}
+
+/* sidebar in setting */
+.sidebar {
+    background-color: var(--bg-dark) !important;
+}
+
+.list-group-content {
+    margin-left: 10px !important;
+}
+
+/* sidebar button in setting menu */
+.nav-group-item {
+    color: var(--text-color) !important;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+/* sidebar button hover in setting menu */
+.nav-group-item:hover,
+.nav-group-item:active,
+.nav-group-item.active {
+    background-color:var(--bg-color) !important;
+    color:var(--text-color) !important;
+}
+
+/* the indent example in setting.editor */
+div.pane>div:nth-child(4)>div:nth-child(2) .label-input-group td:last-child div {
+    border: 1px solid #30363d !important;
+    border-radius: 6px;
+    background-color: #21262d;
+    margin: 10px !important;
+}
+
+/* button in setting menu */
+.ty-preferences button.btn-default {
+    border: 1px solid #30363d;
+    background-color: #21262d;
+    border-radius: 6px;
+}
+
+/* button hover in setting menu */
+.ty-preferences .btn-default:not([disabled]):hover {
+    /* background-color: white !important; */
+    border-color: #8b949e !important;
+    background-color: #21262d !important;
+}
+
+/* return button in setting menu */
+.window-header button:hover {
+    color: var(--text-color) !important;
+}
+
+/* search input in setting menu */
+.search-input {
+    border: 1px solid #30363d;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
+}
+
+.search-input:hover {
+    border: 1px solid #8b949e;
+}
+
+.search-input:focus {
+    border: none !important;
+}
+
+/* select item (mostly in setting menu) */
+select {
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #21262d !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+/* enabled select item hover */
+select:not([disabled]):hover {
+    color: var(--text-color);
+    opacity: 1;
+    border: 1px solid #8b949e;
+}
+
+/* disabled select item hover */
+select[disabled]:hover {
+    opacity: 0.5;
+    border: 1px solid #8b949e;
+}
+
+/* remove up and down button from number type input*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}
+
+
+input[type="checkbox"] {
+    /*display: block;*/
+}
+
+input {
+    background-color: var(--bg-dark) !important;
+    border: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* input number in settings for Win/Linux */
+input:not([type="range"]):not([type="color"]) {
+    border: 1px solid #30363d !important;
+    border-radius: 3px;
+    background-color: var(--bg-dark);
+}
+
+.pane-sm input[type="search"] {
+    border: 1px solid #30363d !important;
+}
+
+/* search in settings */
+#file-library-search-input:hover {
+    border: 1px solid #8b949e !important;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active {
+    border-radius: 10px;
+    background-color: #2F333A;
+}
+
+/* Remove dashed border on filenames in the sidebar */
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+    outline: 0 !important;
+}
+
+/* Handle long filenames in sidebar */
+file-node-title-name-part {
+    white-space: pre-wrap;
+}
+
+.btn-default,
+.btn-default,
+.open > .dropdown-toggle.btn-default {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  font-weight: 500;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  font-weight: 500;
+}
+
+
+
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						}
+</style><title>README</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=' first-line-indent'><h1 id='cryptanalysis-of-hill-cipher'><span>Cryptanalysis of Hill Cipher</span></h1><h2 id='ciphertext-only-attack'><span>Ciphertext only attack</span></h2><p><span>Given the ciphertext only, it really depends on the size of the message and the size of the alphabet.</span></p><ul><li><p><span>Assume the length of the message is </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="3.133ex" height="1.902ex" role="img" focusable="false" viewBox="0 -683 1384.8 840.8" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.357ex;"><defs><path id="MJX-28-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-28-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-28-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(714,-150) scale(0.707)"><use data-c="1D45A" xlink:href="#MJX-28-TEX-I-1D45A"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>m</mi></msub></math></mjx-assistive-mml></mjx-container><script type="math/tex">L_m</script><span>, and the length of the alphabet is </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.928ex" height="1.891ex" role="img" focusable="false" viewBox="0 -683 1294.3 835.7" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.345ex;"><defs><path id="MJX-38-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-38-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-38-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(714,-152.7) scale(0.707)"><use data-c="1D434" xlink:href="#MJX-38-TEX-I-1D434"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>A</mi></msub></math></mjx-assistive-mml></mjx-container><script type="math/tex">L_A</script></p></li><li><p><span>The key will be the matrix of </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="3.133ex" height="1.902ex" role="img" focusable="false" viewBox="0 -683 1384.8 840.8" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.357ex;"><defs><path id="MJX-28-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-28-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-28-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(714,-150) scale(0.707)"><use data-c="1D45A" xlink:href="#MJX-28-TEX-I-1D45A"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>m</mi></msub></math></mjx-assistive-mml></mjx-container><script type="math/tex">L_m</script><span> elements</span></p></li><li><p><span>So the key-space will be </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="3.799ex" height="2.49ex" role="img" focusable="false" viewBox="0 -846 1679.2 1100.7" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.576ex;"><defs><path id="MJX-29-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-29-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-29-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msubsup"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-29-TEX-I-1D43F"></use></g><g data-mml-node="TeXAtom" transform="translate(714,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-29-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(714,-152.7) scale(0.707)"><use data-c="1D434" xlink:href="#MJX-29-TEX-I-1D434"></use></g></g></g><g data-mml-node="mi" transform="translate(714,-247) scale(0.707)"><use data-c="1D45A" xlink:href="#MJX-29-TEX-I-1D45A"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>L</mi><mi>m</mi><mrow data-mjx-texclass="ORD"><msub><mi>L</mi><mi>A</mi></msub></mrow></msubsup></math></mjx-assistive-mml></mjx-container><script type="math/tex">L_m^{L_A}</script></p></li></ul><p><span>Normally, the computer will perform in reasonable time if the number of iteration is less than a billion (which is </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="4.05ex" height="2.005ex" role="img" focusable="false" viewBox="0 -864 1790.1 886" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.05ex;"><defs><path id="MJX-30-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-30-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-30-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-30-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-30-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="TeXAtom" transform="translate(1033,393.1) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-30-TEX-N-31"></use><use data-c="32" xlink:href="#MJX-30-TEX-N-32" transform="translate(500,0)"></use></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mrow data-mjx-texclass="ORD"><mn>12</mn></mrow></msup></math></mjx-assistive-mml></mjx-container><script type="math/tex">10^{12}</script><span>). If the alphabet is large (</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.05ex;"><defs><path id="MJX-31-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-31-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="35" xlink:href="#MJX-31-TEX-N-35"></use><use data-c="30" xlink:href="#MJX-31-TEX-N-30" transform="translate(500,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>50</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">50</script><span> or more based on my experience), then brute-force method is infeasible. </span></p><p><span>Naturally, if you know that the alphabet is small, and the message is relatively small, then you can use brute-force method to retrieve the key.</span></p><h2 id='known-plaintext-attack'><span>Known plaintext attack</span></h2><p><span>You have the plaintext and the corresponding ciphertext :</span></p><ul><li><p><span>Plaintext : </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.025ex;"><defs><path id="MJX-42-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-42-TEX-I-1D45A"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">m</script></p></li><li><p><span>Ciphertext : </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="7.162ex" height="1.756ex" role="img" focusable="false" viewBox="0 -694 3165.6 776" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-33-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-33-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-33-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-33-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-33-TEX-I-1D450"></use></g><g data-mml-node="mo" transform="translate(710.8,0)"><use data-c="3D" xlink:href="#MJX-33-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(1766.6,0)"><use data-c="1D45A" xlink:href="#MJX-33-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(2644.6,0)"><use data-c="1D458" xlink:href="#MJX-33-TEX-I-1D458"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>=</mo><mi>m</mi><mi>k</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">c = mk</script></p></li></ul><p><span>You can completely retrieve the key by calculating :</span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n21" cid="n21" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="19.795ex" height="2.185ex" role="img" focusable="false" viewBox="0 -883.9 8749.5 965.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-1-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-1-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-1-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-1-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-1-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-1-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-1-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-1-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use></g></g></g><g data-mml-node="mi" transform="translate(1864.7,0)"><use data-c="1D450" xlink:href="#MJX-1-TEX-I-1D450"></use></g><g data-mml-node="mo" transform="translate(2575.5,0)"><use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"></use></g><g data-mml-node="msup" transform="translate(3631.2,0)"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-1-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-1-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use></g></g></g><g data-mml-node="mi" transform="translate(5495.9,0)"><use data-c="1D45A" xlink:href="#MJX-1-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(6373.9,0)"><use data-c="1D458" xlink:href="#MJX-1-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(7172.7,0)"><use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(8228.5,0)"><use data-c="1D458" xlink:href="#MJX-1-TEX-I-1D458"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msup><mi>m</mi><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>1</mn></mrow></msup><mi>c</mi><mo>=</mo><msup><mi>m</mi><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>1</mn></mrow></msup><mi>m</mi><mi>k</mi><mo>=</mo><mi>k</mi></math></mjx-assistive-mml></mjx-container></div></div><p><span>This attack is only feasible if </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="10.942ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4836.6 1000" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-34-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path><path id="MJX-34-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><path id="MJX-34-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-34-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-34-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-34-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-34-TEX-N-3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"></path><path id="MJX-34-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D451" xlink:href="#MJX-34-TEX-I-1D451"></use></g><g data-mml-node="mi" transform="translate(520,0)"><use data-c="1D452" xlink:href="#MJX-34-TEX-I-1D452"></use></g><g data-mml-node="mi" transform="translate(986,0)"><use data-c="1D461" xlink:href="#MJX-34-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(1347,0)"><use data-c="28" xlink:href="#MJX-34-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1736,0)"><use data-c="1D45A" xlink:href="#MJX-34-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(2614,0)"><use data-c="29" xlink:href="#MJX-34-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(3280.8,0)"><use data-c="3E" xlink:href="#MJX-34-TEX-N-3E"></use></g><g data-mml-node="mn" transform="translate(4336.6,0)"><use data-c="30" xlink:href="#MJX-34-TEX-N-30"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mi>e</mi><mi>t</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">det(m) > 0</script><span> and </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="19.872ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 8783.6 1000" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-35-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path><path id="MJX-35-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-35-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path><path id="MJX-35-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-35-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><path id="MJX-35-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-35-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-35-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-35-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-35-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-35-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-35-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-35-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D454" xlink:href="#MJX-35-TEX-I-1D454"></use></g><g data-mml-node="mi" transform="translate(477,0)"><use data-c="1D450" xlink:href="#MJX-35-TEX-I-1D450"></use></g><g data-mml-node="mi" transform="translate(910,0)"><use data-c="1D451" xlink:href="#MJX-35-TEX-I-1D451"></use></g><g data-mml-node="mo" transform="translate(1430,0)"><use data-c="28" xlink:href="#MJX-35-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1819,0)"><use data-c="1D451" xlink:href="#MJX-35-TEX-I-1D451"></use></g><g data-mml-node="mi" transform="translate(2339,0)"><use data-c="1D452" xlink:href="#MJX-35-TEX-I-1D452"></use></g><g data-mml-node="mi" transform="translate(2805,0)"><use data-c="1D461" xlink:href="#MJX-35-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(3166,0)"><use data-c="28" xlink:href="#MJX-35-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(3555,0)"><use data-c="1D45A" xlink:href="#MJX-35-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(4433,0)"><use data-c="29" xlink:href="#MJX-35-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(4822,0)"><use data-c="2C" xlink:href="#MJX-35-TEX-N-2C"></use></g><g data-mml-node="msub" transform="translate(5266.7,0)"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-35-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(714,-152.7) scale(0.707)"><use data-c="1D434" xlink:href="#MJX-35-TEX-I-1D434"></use></g></g><g data-mml-node="mo" transform="translate(6561,0)"><use data-c="29" xlink:href="#MJX-35-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(7227.8,0)"><use data-c="3D" xlink:href="#MJX-35-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(8283.6,0)"><use data-c="31" xlink:href="#MJX-35-TEX-N-31"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>g</mi><mi>c</mi><mi>d</mi><mo stretchy="false">(</mo><mi>d</mi><mi>e</mi><mi>t</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo><mo>,</mo><msub><mi>L</mi><mi>A</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">gcd(det(m), L_A) = 1</script></p><p><span>If these conditions are met, then using the above method cannot recover the key. So a generalized method is used :</span></p><h3 id='attack'><span>Attack</span></h3><p><span>Assume the plaintext : </span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n26" cid="n26" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" contenteditable="false" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="36.549ex" height="11.765ex" role="img" focusable="false" viewBox="0 -2850 16154.9 5200" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -5.317ex;"><defs><path id="MJX-73-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-73-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-73-TEX-S4-239B" d="M837 1154Q843 1148 843 1145Q843 1141 818 1106T753 1002T667 841T574 604T494 299Q417 -84 417 -609Q417 -641 416 -647T411 -654Q409 -655 366 -655Q299 -655 297 -654Q292 -652 292 -643T291 -583Q293 -400 304 -242T347 110T432 470T574 813T785 1136Q787 1139 790 1142T794 1147T796 1150T799 1152T802 1153T807 1154T813 1154H819H837Z"></path><path id="MJX-73-TEX-S4-239D" d="M843 -635Q843 -638 837 -644H820Q801 -644 800 -643Q792 -635 785 -626Q684 -503 605 -363T473 -75T385 216T330 518T302 809T291 1093Q291 1144 291 1153T296 1164Q298 1165 366 1165Q409 1165 411 1164Q415 1163 416 1157T417 1119Q417 529 517 109T833 -617Q843 -631 843 -635Z"></path><path id="MJX-73-TEX-S4-239C" d="M413 -9Q412 -9 407 -9T388 -10T354 -10Q300 -10 297 -9Q294 -8 293 -5Q291 5 291 127V300Q291 602 292 605L296 609Q298 610 366 610Q382 610 392 610T407 610T412 609Q416 609 416 592T417 473V127Q417 -9 413 -9Z"></path><path id="MJX-73-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-73-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-73-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-73-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-73-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-73-TEX-S4-239E" d="M31 1143Q31 1154 49 1154H59Q72 1154 75 1152T89 1136Q190 1013 269 873T401 585T489 294T544 -8T572 -299T583 -583Q583 -634 583 -643T577 -654Q575 -655 508 -655Q465 -655 463 -654Q459 -653 458 -647T457 -609Q457 -58 371 340T100 1037Q87 1059 61 1098T31 1143Z"></path><path id="MJX-73-TEX-S4-23A0" d="M56 -644H50Q31 -644 31 -635Q31 -632 37 -622Q69 -579 100 -527Q286 -228 371 170T457 1119Q457 1161 462 1164Q464 1165 520 1165Q575 1165 577 1164Q582 1162 582 1153T583 1093Q581 910 570 752T527 400T442 40T300 -303T89 -626Q78 -640 75 -642T61 -644H56Z"></path><path id="MJX-73-TEX-S4-239F" d="M579 -9Q578 -9 573 -9T554 -10T520 -10Q466 -10 463 -9Q460 -8 459 -5Q457 5 457 127V300Q457 602 458 605L462 609Q464 610 532 610Q548 610 558 610T573 610T578 609Q582 609 582 592T583 473V127Q583 -9 579 -9Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(1155.8,0)"><use data-c="3D" xlink:href="#MJX-73-TEX-N-3D"></use></g><g data-mml-node="mrow" transform="translate(2211.6,0)"><g data-mml-node="mo"><use data-c="239B" xlink:href="#MJX-73-TEX-S4-239B" transform="translate(0,1696)"></use><use data-c="239D" xlink:href="#MJX-73-TEX-S4-239D" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239C" xlink:href="#MJX-73-TEX-S4-239C" transform="scale(1,4.311)"></use></svg></g><g data-mml-node="mtable" transform="translate(875,0)"><g data-mml-node="mtr" transform="translate(0,2100)"><g data-mml-node="mtd" transform="translate(474.4,0)"><g data-mml-node="msub"><g data-mml-node="mi"></g><g data-mml-node="TeXAtom" transform="translate(33,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-73-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-73-TEX-N-31" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2774.2,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-73-TEX-N-31"></use><use data-c="32" xlink:href="#MJX-73-TEX-N-32" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(5513,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-73-TEX-N-31"></use><use data-c="33" xlink:href="#MJX-73-TEX-N-33" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10419.1,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-73-TEX-N-31"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D45B" xlink:href="#MJX-73-TEX-I-1D45B"></use></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,700)"><g data-mml-node="mtd" transform="translate(35.4,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-73-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-73-TEX-N-31" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2774.2,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-73-TEX-N-32"></use><use data-c="32" xlink:href="#MJX-73-TEX-N-32" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(5513,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-73-TEX-N-32"></use><use data-c="33" xlink:href="#MJX-73-TEX-N-33" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10419.1,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-73-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D45B" xlink:href="#MJX-73-TEX-I-1D45B"></use></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,-700)"><g data-mml-node="mtd" transform="translate(285.7,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(3024.6,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(5763.4,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10704.9,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-2100)"><g data-mml-node="mtd"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-73-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="31" xlink:href="#MJX-73-TEX-N-31"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2738.8,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-73-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="32" xlink:href="#MJX-73-TEX-N-32"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(5477.6,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-73-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="33" xlink:href="#MJX-73-TEX-N-33"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-73-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10383.8,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-73-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-73-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(600,0)"><use data-c="1D45B" xlink:href="#MJX-73-TEX-I-1D45B"></use></g></g></g></g></g></g><g data-mml-node="mo" transform="translate(13068.3,0)"><use data-c="239E" xlink:href="#MJX-73-TEX-S4-239E" transform="translate(0,1696)"></use><use data-c="23A0" xlink:href="#MJX-73-TEX-S4-23A0" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239F" xlink:href="#MJX-73-TEX-S4-239F" transform="scale(1,4.311)"></use></svg></g></g></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable rowspacing=".5em" columnspacing="1em" displaystyle="true"><mtr><mtd><mi>m</mi><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">(</mo><mtable columnalign="" columnspacing="1em" rowspacing="4pt"><mtr><mtd><msub><mi></mi><mrow data-mjx-texclass="ORD"><mn>11</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>12</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>13</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>1</mn><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>21</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>22</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>23</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>2</mn><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd></mtr><mtr><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>1</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>2</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>3</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mi>n</mi></mrow></msub></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE">)</mo></mrow></mtd></mtr></mtable></math></mjx-assistive-mml></mjx-container></div></div><p><span>Assume the ciphertext :</span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n28" cid="n28" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" contenteditable="false" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="31.516ex" height="11.765ex" role="img" focusable="false" viewBox="0 -2850 13929.9 5200" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -5.317ex;"><defs><path id="MJX-115-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-115-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-115-TEX-S4-239B" d="M837 1154Q843 1148 843 1145Q843 1141 818 1106T753 1002T667 841T574 604T494 299Q417 -84 417 -609Q417 -641 416 -647T411 -654Q409 -655 366 -655Q299 -655 297 -654Q292 -652 292 -643T291 -583Q293 -400 304 -242T347 110T432 470T574 813T785 1136Q787 1139 790 1142T794 1147T796 1150T799 1152T802 1153T807 1154T813 1154H819H837Z"></path><path id="MJX-115-TEX-S4-239D" d="M843 -635Q843 -638 837 -644H820Q801 -644 800 -643Q792 -635 785 -626Q684 -503 605 -363T473 -75T385 216T330 518T302 809T291 1093Q291 1144 291 1153T296 1164Q298 1165 366 1165Q409 1165 411 1164Q415 1163 416 1157T417 1119Q417 529 517 109T833 -617Q843 -631 843 -635Z"></path><path id="MJX-115-TEX-S4-239C" d="M413 -9Q412 -9 407 -9T388 -10T354 -10Q300 -10 297 -9Q294 -8 293 -5Q291 5 291 127V300Q291 602 292 605L296 609Q298 610 366 610Q382 610 392 610T407 610T412 609Q416 609 416 592T417 473V127Q417 -9 413 -9Z"></path><path id="MJX-115-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-115-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-115-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-115-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-115-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-115-TEX-S4-239E" d="M31 1143Q31 1154 49 1154H59Q72 1154 75 1152T89 1136Q190 1013 269 873T401 585T489 294T544 -8T572 -299T583 -583Q583 -634 583 -643T577 -654Q575 -655 508 -655Q465 -655 463 -654Q459 -653 458 -647T457 -609Q457 -58 371 340T100 1037Q87 1059 61 1098T31 1143Z"></path><path id="MJX-115-TEX-S4-23A0" d="M56 -644H50Q31 -644 31 -635Q31 -632 37 -622Q69 -579 100 -527Q286 -228 371 170T457 1119Q457 1161 462 1164Q464 1165 520 1165Q575 1165 577 1164Q582 1162 582 1153T583 1093Q581 910 570 752T527 400T442 40T300 -303T89 -626Q78 -640 75 -642T61 -644H56Z"></path><path id="MJX-115-TEX-S4-239F" d="M579 -9Q578 -9 573 -9T554 -10T520 -10Q466 -10 463 -9Q460 -8 459 -5Q457 5 457 127V300Q457 602 458 605L462 609Q464 610 532 610Q548 610 558 610T573 610T578 609Q582 609 582 592T583 473V127Q583 -9 579 -9Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="mo" transform="translate(710.8,0)"><use data-c="3D" xlink:href="#MJX-115-TEX-N-3D"></use></g><g data-mml-node="mrow" transform="translate(1766.6,0)"><g data-mml-node="mo"><use data-c="239B" xlink:href="#MJX-115-TEX-S4-239B" transform="translate(0,1696)"></use><use data-c="239D" xlink:href="#MJX-115-TEX-S4-239D" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239C" xlink:href="#MJX-115-TEX-S4-239C" transform="scale(1,4.311)"></use></svg></g><g data-mml-node="mtable" transform="translate(875,0)"><g data-mml-node="mtr" transform="translate(0,2100)"><g data-mml-node="mtd" transform="translate(251.9,0)"><g data-mml-node="msub"><g data-mml-node="mi"></g><g data-mml-node="TeXAtom" transform="translate(33,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-115-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-115-TEX-N-31" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2329.2,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-115-TEX-N-31"></use><use data-c="32" xlink:href="#MJX-115-TEX-N-32" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(4623,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-115-TEX-N-31"></use><use data-c="33" xlink:href="#MJX-115-TEX-N-33" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(6881.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(9084.1,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-115-TEX-N-31"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D45B" xlink:href="#MJX-115-TEX-I-1D45B"></use></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,700)"><g data-mml-node="mtd" transform="translate(35.4,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-115-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-115-TEX-N-31" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2329.2,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-115-TEX-N-32"></use><use data-c="32" xlink:href="#MJX-115-TEX-N-32" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(4623,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-115-TEX-N-32"></use><use data-c="33" xlink:href="#MJX-115-TEX-N-33" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(6881.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(9084.1,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-115-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D45B" xlink:href="#MJX-115-TEX-I-1D45B"></use></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,-700)"><g data-mml-node="mtd" transform="translate(63.2,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(2357.1,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(4650.9,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(6881.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(9147.4,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-2100)"><g data-mml-node="mtd"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-115-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="31" xlink:href="#MJX-115-TEX-N-31"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2293.8,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-115-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="32" xlink:href="#MJX-115-TEX-N-32"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(4587.6,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-115-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="33" xlink:href="#MJX-115-TEX-N-33"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(6881.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-115-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(9048.8,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-115-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-115-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(600,0)"><use data-c="1D45B" xlink:href="#MJX-115-TEX-I-1D45B"></use></g></g></g></g></g></g><g data-mml-node="mo" transform="translate(11288.3,0)"><use data-c="239E" xlink:href="#MJX-115-TEX-S4-239E" transform="translate(0,1696)"></use><use data-c="23A0" xlink:href="#MJX-115-TEX-S4-23A0" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239F" xlink:href="#MJX-115-TEX-S4-239F" transform="scale(1,4.311)"></use></svg></g></g></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable rowspacing=".5em" columnspacing="1em" displaystyle="true"><mtr><mtd><mi>c</mi><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">(</mo><mtable columnspacing="1em" rowspacing="4pt"><mtr><mtd><msub><mi></mi><mrow data-mjx-texclass="ORD"><mn>11</mn></mrow></msub></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>12</mn></mrow></msub></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>13</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>1</mn><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>21</mn></mrow></msub></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>22</mn></mrow></msub></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>23</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>2</mn><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd></mtr><mtr><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>1</mn></mrow></msub></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>2</mn></mrow></msub></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>3</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mi>n</mi></mrow></msub></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE">)</mo></mrow></mtd></mtr></mtable></math></mjx-assistive-mml></mjx-container></div></div><p><span>I will present the way to recover the </span><em><strong><span>i-th</span></strong></em><span> column of the key, the rest columns is similar :</span></p><ul><li><p><span>Form an augmented matrix with the matrix </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.025ex;"><defs><path id="MJX-42-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-42-TEX-I-1D45A"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">m</script><span> and the </span><em><strong><span>i-th</span></strong></em><span> column </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.357ex" role="img" focusable="false" viewBox="0 -442 760 599.8" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.357ex;"><defs><path id="MJX-37-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-37-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-37-TEX-I-1D450"></use></g><g data-mml-node="mi" transform="translate(466,-150) scale(0.707)"><use data-c="1D456" xlink:href="#MJX-37-TEX-I-1D456"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>c</mi><mi>i</mi></msub></math></mjx-assistive-mml></mjx-container><script type="math/tex">c_i</script><span> :</span></p></li></ul><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n33" cid="n33" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" contenteditable="false" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="44.833ex" height="11.765ex" role="img" focusable="false" viewBox="0 -2850 19816 5200" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -5.317ex;"><defs><path id="MJX-161-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-161-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-161-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-161-TEX-S4-239B" d="M837 1154Q843 1148 843 1145Q843 1141 818 1106T753 1002T667 841T574 604T494 299Q417 -84 417 -609Q417 -641 416 -647T411 -654Q409 -655 366 -655Q299 -655 297 -654Q292 -652 292 -643T291 -583Q293 -400 304 -242T347 110T432 470T574 813T785 1136Q787 1139 790 1142T794 1147T796 1150T799 1152T802 1153T807 1154T813 1154H819H837Z"></path><path id="MJX-161-TEX-S4-239D" d="M843 -635Q843 -638 837 -644H820Q801 -644 800 -643Q792 -635 785 -626Q684 -503 605 -363T473 -75T385 216T330 518T302 809T291 1093Q291 1144 291 1153T296 1164Q298 1165 366 1165Q409 1165 411 1164Q415 1163 416 1157T417 1119Q417 529 517 109T833 -617Q843 -631 843 -635Z"></path><path id="MJX-161-TEX-S4-239C" d="M413 -9Q412 -9 407 -9T388 -10T354 -10Q300 -10 297 -9Q294 -8 293 -5Q291 5 291 127V300Q291 602 292 605L296 609Q298 610 366 610Q382 610 392 610T407 610T412 609Q416 609 416 592T417 473V127Q417 -9 413 -9Z"></path><path id="MJX-161-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-161-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-161-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-161-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-161-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-161-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-161-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-161-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-161-TEX-S4-239E" d="M31 1143Q31 1154 49 1154H59Q72 1154 75 1152T89 1136Q190 1013 269 873T401 585T489 294T544 -8T572 -299T583 -583Q583 -634 583 -643T577 -654Q575 -655 508 -655Q465 -655 463 -654Q459 -653 458 -647T457 -609Q457 -58 371 340T100 1037Q87 1059 61 1098T31 1143Z"></path><path id="MJX-161-TEX-S4-23A0" d="M56 -644H50Q31 -644 31 -635Q31 -632 37 -622Q69 -579 100 -527Q286 -228 371 170T457 1119Q457 1161 462 1164Q464 1165 520 1165Q575 1165 577 1164Q582 1162 582 1153T583 1093Q581 910 570 752T527 400T442 40T300 -303T89 -626Q78 -640 75 -642T61 -644H56Z"></path><path id="MJX-161-TEX-S4-239F" d="M579 -9Q578 -9 573 -9T554 -10T520 -10Q466 -10 463 -9Q460 -8 459 -5Q457 5 457 127V300Q457 602 458 605L462 609Q464 610 532 610Q548 610 558 610T573 610T578 609Q582 609 582 592T583 473V127Q583 -9 579 -9Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr"><g data-mml-node="mtd"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D434" xlink:href="#MJX-161-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(783,-150) scale(0.707)"><use data-c="1D456" xlink:href="#MJX-161-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(1354.7,0)"><use data-c="3D" xlink:href="#MJX-161-TEX-N-3D"></use></g><g data-mml-node="mrow" transform="translate(2410.5,0)"><g data-mml-node="mo"><use data-c="239B" xlink:href="#MJX-161-TEX-S4-239B" transform="translate(0,1696)"></use><use data-c="239D" xlink:href="#MJX-161-TEX-S4-239D" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239C" xlink:href="#MJX-161-TEX-S4-239C" transform="scale(1,4.311)"></use></svg></g><g data-mml-node="mtable" transform="translate(875,0)"><g data-mml-node="mtr" transform="translate(0,2100)"><g data-mml-node="mtd" transform="translate(474.4,0)"><g data-mml-node="msub"><g data-mml-node="mi"></g><g data-mml-node="TeXAtom" transform="translate(33,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-161-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-161-TEX-N-31" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2774.2,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-161-TEX-N-31"></use><use data-c="32" xlink:href="#MJX-161-TEX-N-32" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(5513,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-161-TEX-N-31"></use><use data-c="33" xlink:href="#MJX-161-TEX-N-33" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10419.1,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-161-TEX-N-31"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(13193.3,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-161-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(14506.7,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-161-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-161-TEX-N-31"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D456" xlink:href="#MJX-161-TEX-I-1D456"></use></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,700)"><g data-mml-node="mtd" transform="translate(35.4,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-161-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-161-TEX-N-31" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2774.2,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-161-TEX-N-32"></use><use data-c="32" xlink:href="#MJX-161-TEX-N-32" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(5513,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-161-TEX-N-32"></use><use data-c="33" xlink:href="#MJX-161-TEX-N-33" transform="translate(500,0)"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10419.1,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-161-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(13193.3,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-161-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(14506.7,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-161-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-161-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D456" xlink:href="#MJX-161-TEX-I-1D456"></use></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,-700)"><g data-mml-node="mtd" transform="translate(285.7,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(3024.6,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(5763.4,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10704.9,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(13193.3,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-161-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(14479.8,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-2100)"><g data-mml-node="mtd"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="31" xlink:href="#MJX-161-TEX-N-31"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(2738.8,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="32" xlink:href="#MJX-161-TEX-N-32"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(5477.6,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600,0)"><use data-c="33" xlink:href="#MJX-161-TEX-N-33"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(8216.5,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-161-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10383.8,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-161-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(600,0)"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g></g></g></g><g data-mml-node="mtd" transform="translate(13193.3,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-161-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(14471.3,0)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-161-TEX-I-1D450"></use></g><g data-mml-node="TeXAtom" transform="translate(466,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-161-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(600,0)"><use data-c="1D456" xlink:href="#MJX-161-TEX-I-1D456"></use></g></g></g></g></g></g><g data-mml-node="mo" transform="translate(16530.5,0)"><use data-c="239E" xlink:href="#MJX-161-TEX-S4-239E" transform="translate(0,1696)"></use><use data-c="23A0" xlink:href="#MJX-161-TEX-S4-23A0" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239F" xlink:href="#MJX-161-TEX-S4-239F" transform="scale(1,4.311)"></use></svg></g></g></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable rowspacing=".5em" columnspacing="1em" displaystyle="true"><mtr><mtd><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">(</mo><mtable columnalign="" columnspacing="1em" rowspacing="4pt"><mtr><mtd><msub><mi></mi><mrow data-mjx-texclass="ORD"><mn>11</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>12</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>13</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>1</mn><mi>n</mi></mrow></msub></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>1</mn><mi>i</mi></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>21</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>22</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>23</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mn>2</mn><mi>n</mi></mrow></msub></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mn>2</mn><mi>i</mi></mrow></msub></mtd></mtr><mtr><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd></mtr><mtr><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>1</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>2</mn></mrow></msub></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mn>3</mn></mrow></msub></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><msub><mi>m</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mi>n</mi></mrow></msub></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><msub><mi>c</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mi>i</mi></mrow></msub></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE">)</mo></mrow></mtd></mtr></mtable></math></mjx-assistive-mml></mjx-container></div></div><ul><li><p><span>Solve the system of equations in modulo </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.928ex" height="1.891ex" role="img" focusable="false" viewBox="0 -683 1294.3 835.7" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.345ex;"><defs><path id="MJX-38-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-38-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-38-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(714,-152.7) scale(0.707)"><use data-c="1D434" xlink:href="#MJX-38-TEX-I-1D434"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mi>A</mi></msub></math></mjx-assistive-mml></mjx-container><script type="math/tex">L_A</script><span>, the result should be like this :</span></p></li></ul><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n37" cid="n37" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" contenteditable="false" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="39.7ex" height="11.765ex" role="img" focusable="false" viewBox="0 -2850 17547.4 5200" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -5.317ex;"><defs><path id="MJX-205-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-205-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-205-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-205-TEX-S4-239B" d="M837 1154Q843 1148 843 1145Q843 1141 818 1106T753 1002T667 841T574 604T494 299Q417 -84 417 -609Q417 -641 416 -647T411 -654Q409 -655 366 -655Q299 -655 297 -654Q292 -652 292 -643T291 -583Q293 -400 304 -242T347 110T432 470T574 813T785 1136Q787 1139 790 1142T794 1147T796 1150T799 1152T802 1153T807 1154T813 1154H819H837Z"></path><path id="MJX-205-TEX-S4-239D" d="M843 -635Q843 -638 837 -644H820Q801 -644 800 -643Q792 -635 785 -626Q684 -503 605 -363T473 -75T385 216T330 518T302 809T291 1093Q291 1144 291 1153T296 1164Q298 1165 366 1165Q409 1165 411 1164Q415 1163 416 1157T417 1119Q417 529 517 109T833 -617Q843 -631 843 -635Z"></path><path id="MJX-205-TEX-S4-239C" d="M413 -9Q412 -9 407 -9T388 -10T354 -10Q300 -10 297 -9Q294 -8 293 -5Q291 5 291 127V300Q291 602 292 605L296 609Q298 610 366 610Q382 610 392 610T407 610T412 609Q416 609 416 592T417 473V127Q417 -9 413 -9Z"></path><path id="MJX-205-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-205-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-205-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-205-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-205-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-205-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-205-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-205-TEX-S4-239E" d="M31 1143Q31 1154 49 1154H59Q72 1154 75 1152T89 1136Q190 1013 269 873T401 585T489 294T544 -8T572 -299T583 -583Q583 -634 583 -643T577 -654Q575 -655 508 -655Q465 -655 463 -654Q459 -653 458 -647T457 -609Q457 -58 371 340T100 1037Q87 1059 61 1098T31 1143Z"></path><path id="MJX-205-TEX-S4-23A0" d="M56 -644H50Q31 -644 31 -635Q31 -632 37 -622Q69 -579 100 -527Q286 -228 371 170T457 1119Q457 1161 462 1164Q464 1165 520 1165Q575 1165 577 1164Q582 1162 582 1153T583 1093Q581 910 570 752T527 400T442 40T300 -303T89 -626Q78 -640 75 -642T61 -644H56Z"></path><path id="MJX-205-TEX-S4-239F" d="M579 -9Q578 -9 573 -9T554 -10T520 -10Q466 -10 463 -9Q460 -8 459 -5Q457 5 457 127V300Q457 602 458 605L462 609Q464 610 532 610Q548 610 558 610T573 610T578 609Q582 609 582 592T583 473V127Q583 -9 579 -9Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr"><g data-mml-node="mtd"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D434" xlink:href="#MJX-205-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(783,-150) scale(0.707)"><use data-c="1D456" xlink:href="#MJX-205-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(1354.7,0)"><use data-c="3D" xlink:href="#MJX-205-TEX-N-3D"></use></g><g data-mml-node="mrow" transform="translate(2410.5,0)"><g data-mml-node="mo"><use data-c="239B" xlink:href="#MJX-205-TEX-S4-239B" transform="translate(0,1696)"></use><use data-c="239D" xlink:href="#MJX-205-TEX-S4-239D" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239C" xlink:href="#MJX-205-TEX-S4-239C" transform="scale(1,4.311)"></use></svg></g><g data-mml-node="mtable" transform="translate(875,0)"><g data-mml-node="mtr" transform="translate(0,2100)"><g data-mml-node="mtd" transform="translate(583.7,0)"></g><g data-mml-node="mtd" transform="translate(2501,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(4668.3,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(6502,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(9003,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(10836.7,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-205-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(12150,0)"><g data-mml-node="mstyle" fill="yellow" stroke="yellow"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-205-TEX-I-1D458"></use></g><g data-mml-node="TeXAtom" transform="translate(554,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-205-TEX-N-31"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D456" xlink:href="#MJX-205-TEX-I-1D456"></use></g></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,700)"><g data-mml-node="mtd" transform="translate(333.7,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(2501,0)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-205-TEX-N-31"></use></g></g><g data-mml-node="mtd" transform="translate(4668.3,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(6502,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(9003,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(10836.7,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-205-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(12150,0)"><g data-mml-node="mstyle" fill="yellow" stroke="yellow"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-205-TEX-I-1D458"></use></g><g data-mml-node="TeXAtom" transform="translate(554,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-205-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D456" xlink:href="#MJX-205-TEX-I-1D456"></use></g></g></g></g></g></g><g data-mml-node="mtr" transform="translate(0,-700)"><g data-mml-node="mtd"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(2167.3,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(4334.7,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(6502,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(8669.3,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(10836.7,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-205-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(12167.1,0)"><g data-mml-node="mstyle" fill="yellow" stroke="yellow"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g></g></g><g data-mml-node="mtr" transform="translate(0,-2100)"><g data-mml-node="mtd" transform="translate(333.7,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(2501,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(4668.3,0)"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-205-TEX-N-30"></use></g></g><g data-mml-node="mtd" transform="translate(6502,0)"><g data-mml-node="mo"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(444.7,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g><g data-mml-node="mo" transform="translate(889.3,0)"><use data-c="2E" xlink:href="#MJX-205-TEX-N-2E"></use></g></g><g data-mml-node="mtd" transform="translate(9003,0)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-205-TEX-N-31"></use></g></g><g data-mml-node="mtd" transform="translate(10836.7,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="7C" xlink:href="#MJX-205-TEX-N-7C"></use></g></g><g data-mml-node="mtd" transform="translate(12114.7,0)"><g data-mml-node="mstyle" fill="yellow" stroke="yellow"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-205-TEX-I-1D458"></use></g><g data-mml-node="TeXAtom" transform="translate(554,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-205-TEX-I-1D45B"></use></g><g data-mml-node="mi" transform="translate(600,0)"><use data-c="1D456" xlink:href="#MJX-205-TEX-I-1D456"></use></g></g></g></g></g></g></g><g data-mml-node="mo" transform="translate(14261.9,0)"><use data-c="239E" xlink:href="#MJX-205-TEX-S4-239E" transform="translate(0,1696)"></use><use data-c="23A0" xlink:href="#MJX-205-TEX-S4-23A0" transform="translate(0,-1706)"></use><svg width="875" height="1782" y="-641" x="0" viewBox="0 402.4 875 1782"><use data-c="239F" xlink:href="#MJX-205-TEX-S4-239F" transform="scale(1,4.311)"></use></svg></g></g></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable rowspacing=".5em" columnspacing="1em" displaystyle="true"><mtr><mtd><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">(</mo><mtable columnalign="" columnspacing="1em" rowspacing="4pt"><mtr><mtd></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mn>0</mn></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><mstyle mathcolor="yellow"><msub><mi>k</mi><mrow data-mjx-texclass="ORD"><mn>1</mn><mi>i</mi></mrow></msub></mstyle></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mn>0</mn></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><mstyle mathcolor="yellow"><msub><mi>k</mi><mrow data-mjx-texclass="ORD"><mn>2</mn><mi>i</mi></mrow></msub></mstyle></mtd></mtr><mtr><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><mstyle mathcolor="yellow"><mo>.</mo><mo>.</mo><mo>.</mo></mstyle></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd><mtd><mn>1</mn></mtd><mtd><mo data-mjx-texclass="ORD" stretchy="false">|</mo></mtd><mtd><mstyle mathcolor="yellow"><msub><mi>k</mi><mrow data-mjx-texclass="ORD"><mi>n</mi><mi>i</mi></mrow></msub></mstyle></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE">)</mo></mrow></mtd></mtr></mtable></math></mjx-assistive-mml></mjx-container></div></div><ul><li><p><span>Do this with </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="8.299ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3668.2 1000" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-39-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-39-TEX-N-2208" d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z"></path><path id="MJX-39-TEX-N-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path><path id="MJX-39-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-39-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-39-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-39-TEX-N-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D456" xlink:href="#MJX-39-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(622.8,0)"><use data-c="2208" xlink:href="#MJX-39-TEX-N-2208"></use></g><g data-mml-node="mo" transform="translate(1567.6,0)"><use data-c="5B" xlink:href="#MJX-39-TEX-N-5B"></use></g><g data-mml-node="mn" transform="translate(1845.6,0)"><use data-c="31" xlink:href="#MJX-39-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(2345.6,0)"><use data-c="2C" xlink:href="#MJX-39-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(2790.2,0)"><use data-c="1D45B" xlink:href="#MJX-39-TEX-I-1D45B"></use></g><g data-mml-node="mo" transform="translate(3390.2,0)"><use data-c="5D" xlink:href="#MJX-39-TEX-N-5D"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi><mo>∈</mo><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi>n</mi><mo stretchy="false">]</mo></math></mjx-assistive-mml></mjx-container><script type="math/tex">i \in [1, n]</script><span>, and we will get the complete key matrix</span></p></li></ul><p>&nbsp;</p><h3 id='implementation'><span>Implementation</span></h3><p><span>I have implemented the attack on </span><a href='Known Plaintext Attack.ipynb'><span>this file</span></a></p><p><span>Feel free to explore.</span></p><h2 id='chosen-plaintext-attack'><span>Chosen plaintext attack</span></h2><p><span>So we get to choose one plaintext that we can think, and we will in turn get the corresponding ciphertext.</span></p><p><span>This is easy, we just need to send the </span><em><strong><span>identity matrix</span></strong></em><span> </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.14ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 504 683" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: 0px;"><defs><path id="MJX-41-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-41-TEX-I-1D43C"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>I</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">I</script><span>, what we get is the key : </span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n48" cid="n48" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" contenteditable="false" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="16.694ex" height="1.756ex" role="img" focusable="false" viewBox="0 -694 7378.7 776" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-207-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-207-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-207-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-207-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-207-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-207-TEX-I-1D450"></use></g><g data-mml-node="mo" transform="translate(710.8,0)"><use data-c="3D" xlink:href="#MJX-207-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(1766.6,0)"><use data-c="1D45A" xlink:href="#MJX-207-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(2644.6,0)"><use data-c="1D458" xlink:href="#MJX-207-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(3443.3,0)"><use data-c="3D" xlink:href="#MJX-207-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(4499.1,0)"><use data-c="1D43C" xlink:href="#MJX-207-TEX-I-1D43C"></use></g><g data-mml-node="mi" transform="translate(5003.1,0)"><use data-c="1D458" xlink:href="#MJX-207-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(5801.9,0)"><use data-c="3D" xlink:href="#MJX-207-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(6857.7,0)"><use data-c="1D458" xlink:href="#MJX-207-TEX-I-1D458"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>c</mi><mo>=</mo><mi>m</mi><mi>k</mi><mo>=</mo><mi>I</mi><mi>k</mi><mo>=</mo><mi>k</mi></math></mjx-assistive-mml></mjx-container></div></div><p><span>I probably dont need to implement this, it is too obvious</span></p><h2 id='chosen-ciphertext-attack'><span>Chosen ciphertext attack</span></h2><p><span>In a similar manner to the Chosen Plaintext Attack, we can send the </span><em><strong><span>identity matrix</span></strong></em><span> </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.14ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 504 683" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: 0px;"><defs><path id="MJX-41-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-41-TEX-I-1D43C"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>I</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">I</script><span>, what we get is the </span><strong><span>inverse key</span></strong><span> :</span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n52" cid="n52" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-rawblock-container md-math-container" tabindex="-1"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="23.391ex" height="2.185ex" role="img" focusable="false" viewBox="0 -883.9 10338.7 965.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-7-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-7-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-7-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-7-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-7-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-7-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-7-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-7-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(1155.8,0)"><use data-c="3D" xlink:href="#MJX-7-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(2211.6,0)"><use data-c="1D450" xlink:href="#MJX-7-TEX-I-1D450"></use></g><g data-mml-node="msup" transform="translate(2644.6,0)"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-7-TEX-I-1D458"></use></g><g data-mml-node="TeXAtom" transform="translate(554,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-7-TEX-N-31"></use></g></g></g><g data-mml-node="mo" transform="translate(4430,0)"><use data-c="3D" xlink:href="#MJX-7-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(5485.8,0)"><use data-c="1D43C" xlink:href="#MJX-7-TEX-I-1D43C"></use></g><g data-mml-node="msup" transform="translate(5989.8,0)"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-7-TEX-I-1D458"></use></g><g data-mml-node="TeXAtom" transform="translate(554,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-7-TEX-N-31"></use></g></g></g><g data-mml-node="mo" transform="translate(7775.3,0)"><use data-c="3D" xlink:href="#MJX-7-TEX-N-3D"></use></g><g data-mml-node="msup" transform="translate(8831,0)"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-7-TEX-I-1D458"></use></g><g data-mml-node="TeXAtom" transform="translate(554,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-7-TEX-N-31"></use></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>m</mi><mo>=</mo><mi>c</mi><msup><mi>k</mi><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>I</mi><msup><mi>k</mi><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mi>k</mi><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>1</mn></mrow></msup></math></mjx-assistive-mml></mjx-container></div></div><h2 id='note'><span>Note</span></h2><p><span>If in some challenges, we are forbidden to send the identity matrix to the server, just send some random matrix </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.025ex;"><defs><path id="MJX-42-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-42-TEX-I-1D45A"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">m</script><span> to the server, you will get the ciphertext </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="0.98ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 433 453" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.025ex;"><defs><path id="MJX-43-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-43-TEX-I-1D450"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">c</script><span>, which can totally be attacked by Known Plaintext Attack using the method I mentioned above.</span></p><p>&nbsp;</p></div></div>
+</body>
+</html>

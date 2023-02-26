@@ -34,49 +34,57 @@ If these conditions are met, then using the above method cannot recover the key.
 Assume the plaintext : 
 $$
 m = 
-\begin{pmatrix}
+\left(
+\begin{array}
 	m_{11} & m_{12} & m_{13} & ... & m_{1n} \\
 	m_{21} & m_{22} & m_{23} & ... & m_{2n} \\
 	... & ... & ... & ... & ... \\
 	m_{n1} & m_{n2} & m_{n3} & ... & m_{nn} \\
-\end{pmatrix}
+\end{array}
+\right)
 $$
 
 
 Assume the ciphertext :
 $$
 c = 
-\begin{pmatrix}
+\left(
+\begin{array}
 	c_{11} & c_{12} & c_{13} & ... & c_{1n} \\
 	c_{21} & c_{22} & c_{23} & ... & c_{2n} \\
 	... & ... & ... & ... & ... \\
 	c_{n1} & c_{n2} & c_{n3} & ... & c_{nn} \\
-\end{pmatrix}
+\end{array}
+\right)
 $$
 I will present the way to recover the ***i-th*** column of the key, the rest columns is similar :
 
 + Form an augmented matrix with the matrix $m$ and the ***i-th*** column $c_i$ :
 
 $$
-aug\_matrix\_i =
-\begin{pmatrix}
+A_i =
+\left(
+\begin{array}
 	m_{11} & m_{12} & m_{13} & ... & m_{1n} & | & c_{1i} \\
 	m_{21} & m_{22} & m_{23} & ... & m_{2n} & | & c_{2i} \\
 	... & ... & ... & ... & ... & | & ... \\
 	m_{n1} & m_{n2} & m_{n3} & ... & m_{nn} & | & c_{ni} \\
-\end{pmatrix}
+\end{array}
+\right)
 $$
 
 + Solve the system of equations in modulo $L_A$, the result should be like this :
 
 $$
-aug\_matrix\_i = 
-\begin{pmatrix}
+A_i =
+\left(
+\begin{array}
 	1 & 0 & 0 & ... & 0 & | & \textcolor{yellow}{k_{1i}} \\
 	0 & 1 & 0 & ... & 0 & | & \textcolor{yellow}{k_{2i}} \\
 	... & ... & ... & ... & ... & | & \textcolor{yellow}{...} \\
 	0 & 0 & 0 & ... & 1 & | & \textcolor{yellow}{k_{ni}}
-\end{pmatrix}
+\end{array}
+\right)
 $$
 
 + Do this with $i \in [1, n]$, and we will get the complete key matrix
